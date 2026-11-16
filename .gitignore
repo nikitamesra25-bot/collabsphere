@@ -1,0 +1,18 @@
+node_modules/
+.env/
+MONGO_URI
+CLIENT_URL
+JWT_SECRET
+GEMINI_API_KEY
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Uploaded files
+uploads/*
+!uploads/.gitkeep

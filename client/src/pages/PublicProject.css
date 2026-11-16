@@ -1,0 +1,322 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.public-project-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #191b25;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+
+.public-navbar {
+  width: 100%;
+  height: 82px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.public-navbar-inner {
+  max-width: 1230px;
+  height: 100%;
+  margin: auto;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.public-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #171923;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.brand-icon {
+  color: #4338ca;
+  font-size: 27px;
+}
+
+.signup-button {
+  background: #4338ca;
+  color: white;
+  text-decoration: none;
+  padding: 15px 22px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.signup-button:hover {
+  background: #3730a3;
+}
+
+/* MAIN CONTAINER */
+
+.public-container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 60px 15px 30px;
+}
+
+/* PROJECT INFORMATION */
+
+.public-project-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.public-badge {
+  background: #dcfce7;
+  color: #166534;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.public-url {
+  color: #606779;
+  font-size: 14px;
+}
+
+.public-project-info h1 {
+  font-size: 48px;
+  margin: 0 0 17px;
+  font-weight: 750;
+  letter-spacing: -1.5px;
+}
+
+.public-description {
+  font-size: 22px;
+  color: #454b5c;
+  margin: 0 0 24px;
+}
+
+.public-project-meta {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  color: #606779;
+  font-size: 14px;
+}
+
+.public-project-meta strong {
+  color: #191b25;
+}
+
+/* README CARD */
+
+.public-readme-card {
+  border: 1px solid #dfe2e8;
+  border-radius: 17px;
+  overflow: hidden;
+  margin-top: 40px;
+}
+
+.readme-header {
+  height: 58px;
+  padding: 0 24px;
+  background: #f3f4f8;
+  border-bottom: 1px solid #dfe2e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #44495a;
+  font-size: 13px;
+  font-family: monospace;
+}
+
+.gemini-label {
+  background: #dff5fa;
+  color: #17647a;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.readme-content {
+  padding: 30px 35px;
+}
+
+.readme-content h2 {
+  font-size: 32px;
+  margin: 12px 0 24px;
+}
+
+.readme-content h3 {
+  font-size: 24px;
+  margin: 40px 0 25px;
+}
+
+.readme-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #454b5c;
+  margin: 0;
+}
+
+.readme-content pre {
+  background: #171923;
+  color: #e5e7eb;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* SHARED NOTES */
+
+.public-notes-section {
+  margin-top: 40px;
+}
+
+.public-notes-section > h2 {
+  font-size: 23px;
+  margin: 0 0 18px;
+}
+
+.public-notes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.public-note-card {
+  border: 1px solid #dfe2e8;
+  border-radius: 14px;
+  padding: 22px;
+  transition: 0.2s ease;
+}
+
+.public-note-card:hover {
+  border-color: #a5a9b8;
+  transform: translateY(-2px);
+}
+
+.public-note-card h3 {
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.public-note-card p {
+  color: #606779;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* FOOTER */
+
+.public-footer {
+  border-top: 1px solid #e1e3e8;
+  margin-top: 40px;
+  padding-top: 25px;
+  color: #606779;
+  font-size: 14px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .public-navbar {
+    height: 70px;
+  }
+
+  .public-container {
+    padding: 35px 18px;
+  }
+
+  .public-project-info h1 {
+    font-size: 36px;
+  }
+
+  .public-description {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .public-project-meta {
+    gap: 14px;
+  }
+
+  .readme-content {
+    padding: 22px;
+  }
+
+  .readme-content h2 {
+    font-size: 27px;
+  }
+
+  .readme-content h3 {
+    font-size: 21px;
+    margin-top: 30px;
+  }
+
+  .public-notes-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .public-brand {
+    font-size: 18px;
+  }
+
+  .signup-button {
+    padding: 12px 14px;
+    font-size: 12px;
+  }
+
+  .public-project-info h1 {
+    font-size: 30px;
+  }
+
+  .public-url {
+    font-size: 12px;
+  }
+
+  .readme-header {
+    padding: 0 14px;
+  }
+
+  .readme-content {
+    padding: 18px;
+  }
+
+  .readme-content p {
+    font-size: 15px;
+  }
+}
+
+
+.public-project-info h1 {
+  color: #1f2937;
+}
+
+.readme-content h2,
+.readme-content h3 {
+  color: #1f2937;
+}
+
+.public-notes-section h2 {
+  color: #1f2937;
+}
+
+.public-note-card h3 {
+  color: #1f2937;
+}
